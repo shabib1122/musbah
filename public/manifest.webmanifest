@@ -1,0 +1,19 @@
+{
+  "name": "مسبحة الذكر — عداد الاستغفار والتسبيح",
+  "short_name": "مسبحة الذكر",
+  "description": "عداد مخصص للاستغفار والتسبيح بالصوت والضغط على الشاشة",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f5f0",
+  "theme_color": "#0D5C46",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

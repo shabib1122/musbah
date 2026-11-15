@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: "IBM Plex Sans Arabic", system-ui, -apple-system, sans-serif;
+    --font-display: "Amiri", Georgia, serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #f6f5f0;
+    color: #17211d;
+    transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1), color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html.dark body {
+    background-color: #0b1210;
+    color: #f2efe9;
+  }
+}
+
+.font-display-arabic {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes ripple-ring {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(1.18);
+    opacity: 0;
+  }
+}
+
+.animate-ripple-ring {
+  animation: ripple-ring 380ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ripple-ring {
+    animation: none;
+  }
+}

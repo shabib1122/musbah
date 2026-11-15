@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0D5C46" />
+  <circle cx="256" cy="256" r="154" fill="none" stroke="#D4AF63" stroke-width="14" stroke-dasharray="14 15.2" stroke-linecap="round" />
+  <circle cx="256" cy="256" r="112" fill="none" stroke="#F6F5F0" stroke-opacity="0.22" stroke-width="4" />
+  <text x="256" y="282" text-anchor="middle" font-family="Georgia, serif" font-size="118" font-weight="bold" fill="#F6F5F0">ذِكْر</text>
+</svg>
